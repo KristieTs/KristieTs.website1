@@ -1,0 +1,168 @@
+body, main, div, article, img, span {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: Raleway,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+main{
+    width: 100%;
+}
+.side-img{
+    width: 25%;
+    height: 100vh;
+    background-image: url("images/navigation/contact.jpg");
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.side-img h1{
+    position: absolute;
+    left: -10px;
+    bottom: 70px;
+    rotate: 90deg;
+    color: white;
+    font-size: 3rem;
+}
+#x-btn{
+    position: absolute;
+    top: 0;
+    right:0;
+    cursor: pointer;
+}
+a{
+    height: 25px;
+    width: 25px;
+}
+.side-img img{
+    transform: scale(0.05);
+    position: absolute;
+    z-index: 999;
+}
+.side-img:hover img{
+    transform: scale(0.07);
+}
+.ornate{
+    height: 20px;
+    width: 200px;
+    background-image: url('images/divider.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-self: center;
+}
+.contact, .map{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-wrapper{
+    width:80%;
+    display: flex;
+    height: 420px;
+    justify-content: space-between;
+}
+.icons{
+    display: flex;
+}
+.icon{
+    margin: 36px 24px 0 0;
+}
+svg{
+    width: 16px;
+    color: gray;
+    margin-right: 10px;
+}
+svg:hover{
+    color: rgb(22, 22, 22);
+}
+.coordinates{
+    display: flex;
+    flex-direction: column;
+}
+.coordinates div{
+    display: flex;
+}
+.forms, .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.map{
+    display: flex;
+    justify-content: center;
+}
+.info, .forms{
+    width: 45%;
+}
+.info>div:not(:last-child){
+    border-bottom: 1px solid rgb(184, 182, 182);
+}
+.form input, textarea, button{
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 2px;
+}
+input, textarea, button, .form{
+    width: 100%;
+}
+label{
+    margin-bottom: 5px;
+}
+button{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 2px;
+    background-color: rgb(247, 128, 58);
+    color: white;
+    font-weight: 800;
+}
+.about-footer{
+    background-image: url('images/navigation/contact.jpg');
+    background-position: 200px;
+    width: 75%;
+    display: flex;
+    justify-self: start;
+    justify-content: center;
+}
+.footertxt-wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: 500;
+}
+h1{
+    font-size: 3rem;
+}
+iframe{
+    width: 80%;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 992px) {
+    .side-img{
+        display: none;
+    }
+    .contact, .map, .about-footer{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .contact-wrapper{
+        flex-wrap: wrap;
+    }
+    .info, .forms{
+        width: 100%;
+    }
+    .map{
+        margin-top: 350px;
+    }
+    .input{
+        width: 100%;
+    }
+}

@@ -1,0 +1,168 @@
+body, main, div, article, img, span {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: Raleway,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+main{
+    width: 100%;
+}
+.services, .plan, .clients{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.ornate{
+    height: 20px;
+    width: 200px;
+    background-image: url('images/divider.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-self: center;
+}
+.services-wrapper, .plan-wrapper, .clients{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+.services-txt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    margin-top: 100px;
+}
+.service img{
+    transform: scale(2.5);
+    margin-left: 16px;
+    /* width: 100%; */
+}
+.side-img{
+    width: 25%;
+    height: 100vh;
+    background-image: url("images/navigation/service.jpg");
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.side-img h1{
+    position: absolute;
+    left: -10px;
+    bottom: 70px;
+    rotate: 90deg;
+    color: white;
+    font-size: 3rem;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1rem;
+    margin-top: 32px;
+}
+a{
+    text-decoration: none;   
+}
+/* here starts article plan */
+.packages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.package{
+    border: 1px solid lightgray;
+    text-align: center;
+    width: 30%;
+    border-radius: 2px;
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#trial-btn{
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 70px;
+    align-self: center;
+}
+.clients-wrapper{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.client{
+    width: 25%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.client img{
+    width: 70%;
+}
+.about-footer{
+    background-image: url('images/navigation/service.jpg');
+    background-position: 200px;
+    width: 75%;
+    display: flex;
+    justify-self: start;
+    justify-content: center;
+}
+.footertxt-wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: 500;
+}
+.logo-5, .logo-6, .logo-7, .logo-8{
+    transform: scale(0.6);
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+}
+h1{
+    text-align: center;
+   }
+@media screen and (max-width: 992px) { 
+    .side-img{
+        display: none;
+    }
+    .services, .plan, .clients, .about-footer{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) { 
+    .service, .package{
+        width: 100%;
+    }
+    .package{
+        margin-top: 10px;
+    }
+    .client{
+        width: 33%;
+    }
+}

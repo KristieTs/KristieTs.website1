@@ -1,0 +1,220 @@
+body, main, div, article, img, span {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: Raleway,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+main{
+    width: 100%;
+}
+.story{
+    width: 100%;
+    display: flex;
+}
+.story-wrapper{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.side-img{
+    width: 25%;
+    height: 100vh;
+    background-image: url("images/navigation/about.jpg");
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+}
+.side-img h1{
+    position: absolute;
+    left: -10px;
+    bottom: 70px;
+    rotate: 90deg;
+    color: white;
+    font-size: 3rem;
+}
+.side-img img{
+    transform: scale(0.05);
+}
+.side-img:hover img{
+    transform: scale(0.07);
+}
+.story-info{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.story-h1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ornate{
+    height: 20px;
+    width: 200px;
+    background-image: url('images/divider.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-self: center;
+}
+.story-txt h2{
+    padding-top: 0;
+    margin-top: 0;
+}
+.story-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.story-img{
+    width:45%;
+}
+.story-img img{
+    width: 100%;
+    border-radius: 4px;
+}
+.story-txt{
+    width:45%;
+    display: flex;
+    flex-direction: column;
+}
+/* here starts next article- statistics */
+.statistics{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin-top: 4rem;
+}
+.stat-container{
+    width: 75%;
+    display: flex;
+    justify-content: center;    
+}
+.stat-wrapper{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.stat{
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height:220px;
+    font-weight: 400;
+    position: relative;
+    padding-top: 50px;
+}
+.shape{
+    position:absolute;
+}
+.shape-1 {
+    top: 0;
+    right: 0;
+    width: 35%;
+}
+.shape-2{
+    bottom: 0; 
+    right: 0;
+    width: 60%; 
+}
+.shape-3{
+    top: 0;
+    left: 0;
+    width: 60%;
+}
+.fact-1{
+    border-color: orange;
+}
+.fact-2{
+    border-color: red;
+}
+.fact-3{
+    border-color: blue;
+}
+.our-team{
+    margin-top: 100px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: start;
+}
+.team-wrapper{
+   width: 75%;
+   display: flex;
+   flex-wrap: wrap; 
+   justify-content: space-between;  
+}
+.member{
+    max-width: 21%;
+    text-align: center;
+    margin-top: 20px;
+}
+.member p{
+    font-weight: 400;
+}
+.member img{
+    width: 100%;
+    border-radius: 100px;
+}
+.join{
+    margin-top: 50px;
+    text-align: center;
+    margin: 50px auto; 
+}
+#join-btn{
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.about-footer{
+    background-image: url('images/navigation/about.jpg');
+    background-position: 200px;
+    width: 75%;
+    display: flex;
+    justify-self: start;
+    justify-content: center;
+}
+.footertxt-wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: 500;
+}
+h1{
+    font-size: 3rem;
+}
+@media screen and (max-width: 992px) {
+    .side-img{
+        display: none;
+    }
+    .story-wrapper, .stat-container, .our-team, .about-footer{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+   .member{
+        max-width: 45%;
+   }
+    .story-img, .story-txt, .stat{
+        width: 100%;
+   }
+   .stat{
+    margin-top: 10px;
+   }
+}

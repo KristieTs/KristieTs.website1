@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <main>
+        <article class="portfolio">
+            <h1>Our Latest Works</h1>
+            <div class="ornate"></div>
+            <div class="navigation">
+                <ul class="nav">
+                    <li onclick="pageOne()">All</li>
+                    <li onclick="pageTwo()">Photography</li>
+                    <li onclick="pageThree()">Studio</li>
+                    <li onclick="pageFour()">Interior</li>
+                    <li onclick="pageFive()">Illustration</li>
+                </ul>
+            </div>
+            <div class="portfolio-wrapper">
+                <div class="row row1">
+                    <div class="col col1-1">
+                        <div class="row pr1 subrow" data-id="1"></div>
+                        <div class="row pr2 subrow" data-id="2"></div>
+                    </div>
+                    <div class="col col1-2">
+                        <div class="row pr3 subrow" data-id="3"></div>
+                        <div class="row pr4 subrow" data-id="4"></div>
+                    </div>
+                    <div class="col col1-3">
+                        <div class="row pr5 subrow" data-id="5"></div>
+                        <div class="row pr6 subrow" data-id="6"></div>
+                    </div>
+                </div>
+                <div class="row row2">
+                    <div class="col col2-1">
+                        <div class="row pr7 subrow" data-id="7"></div>
+                    </div>
+                    <div class="col col2-2">
+                        <div class="row pr8 subrow" data-id="8"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="start">
+                <p>Start a project with us</p>
+                <p>Our telented team always ready to help you</p>
+                <a id="start-btn" href="#">Get started</a>
+            </div>
+            <div class="side-img">
+                <h1>Portfolio</h1>
+            </div>
+            <footer class="portfolio-footer">
+                <div class="footertxt-wrapper">
+                    <p>COPYRIGHT © 2018 BOOTS4™ INC.</p>
+                    <p>MADE WITHBY THEMEWAGON</p>
+                </div>
+            </footer>
+        </article>
+    </main>
+    <script src="portfolio.js"></script>
+</body>
+</html>
